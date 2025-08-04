@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: white;
+  color: #f3f3f3;
+}
+
+header {
+  background: white;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  border-bottom: 2px solid #444;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  font-weight: lighter;
+  font-style: oblique;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  color: black;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  will-change: transform;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(233, 30, 99, 0.15);
+  transform: translateY(-6px) scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  background: #242428;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.price {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0.5rem 0 0.7rem 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #ddd;
+}
+
+.buy-btn {
+  background: black;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.85rem 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(233, 30, 99, 0.10);
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+
+.buy-btn:active {
+  background: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #aaa;
+  background: #222;
+  border-top: 2px solid #444;
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  .products {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem;
+    gap: 1.2rem;
+  }
+  .product-card {
+    padding: 1.2rem 0.7rem;
+  }
+  .product-card img {
+    max-width: 95vw;
+    height: auto;
+  }
+  h1 {
+    font-size: 2.1rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+}
