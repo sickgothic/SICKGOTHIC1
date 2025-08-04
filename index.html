@@ -70,11 +70,12 @@
       button.addEventListener('click', function () {
         const productName = this.closest('.product-card').querySelector('h2').innerText.trim();
         const encodedMessage = encodeURIComponent(`Hello, I'm interested in this product: ${productName}`);
-        const phoneNumber = '919877520875';
+        const phoneNumber = '919814802716';
         const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(url, '_blank');
       });
     });
   </script>
 </body>
+
 </html>
